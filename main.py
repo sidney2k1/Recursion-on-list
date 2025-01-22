@@ -5,7 +5,7 @@ def checksorted(a):
     if length==0 or length==1:
         return True
     return a[0]<=a[1] and checksorted(a[1:])
-a=[1,2,3,4,5,6,8,6]
+a=[1,2,3,4,5,6,8]
 if checksorted(a):
     print("The list:",a,"is already sorted")
 else:
